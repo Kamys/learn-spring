@@ -15,6 +15,7 @@ repositories {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter:2.5.0")
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.5.0")
     testImplementation(kotlin("test-junit"))
 }
 
