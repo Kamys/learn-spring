@@ -1,7 +1,9 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
+    id("org.springframework.boot") version "2.5.0"
     kotlin("jvm") version "1.5.0"
+    kotlin("plugin.spring") version "1.5.0"
 }
 
 group = "me.nikita"
@@ -12,6 +14,7 @@ repositories {
 }
 
 dependencies {
+    implementation("org.springframework.boot:spring-boot-starter:2.5.0")
     testImplementation(kotlin("test-junit"))
 }
 
